@@ -1,0 +1,9 @@
+x	Create			Create/Update
+x	Update			Create/Update
+x	Approve			Approve/Approval remove/Merge/Decline
+x	Approval remove	Approve/Approval remove/Merge/Decline
+x	Merge			Approve/Approval remove/Merge/Decline
+x	Decline			Approve/Approval remove/Merge/Decline
+x	Comment create	Comment create/Comment delete
+-	Comment update	-
+x	Comment delete	Comment create/Comment delete

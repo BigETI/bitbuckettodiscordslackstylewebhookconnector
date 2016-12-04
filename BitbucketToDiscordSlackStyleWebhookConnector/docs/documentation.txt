@@ -1,0 +1,57 @@
+Actor:
+	#user_avatar: actor/links/avatar/href
+	#user_url: actor/links/html/href
+	#username: actor/username
+	#user_display_name: actor/display_name
+
+Repository:
+	#repository_url: repository/links/html/href
+	#repository_name: repository/name
+	#repository_avatar: repository/links/avatar/href
+
+Push:
+	Old:
+		#old_branch_name: push/changes/old/name
+		#old_branch_url: push/changes/old/links/html/href
+		#old_commit_url: push/changes/old/target/links/html/href
+		#old_commit_message: push/changes/old/target/message
+	
+	New:
+		#new_branch_name: push/changes/new/name
+		#new_branch_url: push/changes/new/links/html/href
+		#new_commit_url: push/changes/new/target/links/html/href
+		#new_commit_message: push/changes/new/target/message
+	
+	Links:
+		#commit_diff: push/changes/links/html/href
+
+Issue:
+	General:
+		#issue_kind: issue/kind
+		#issue_title: issue/title
+		#issue_message: issue/content/raw
+		#issue_version: issue/version
+	
+	Create:
+
+	Create comment:
+		#issue_comment_kind: comment/kind
+		#issue_comment_url: comment/links/html/href
+		#issue_comment_message: comment/content/raw
+	
+	Update:
+		#issue_old_status: changes/status/old
+		#issue_new_status: changes/status/new
+		
+Commit comment:
+	#commit-message: comment/message
+
+Changes:
+	#changes: changes
+
+Fork:
+	#fork_name: fork/name
+	#fork_description: fork/description
+	#fork_url: fork/links/html/href
+	#fork_avatar: fork/links/avatar/href
+	#fork_language: fork/language

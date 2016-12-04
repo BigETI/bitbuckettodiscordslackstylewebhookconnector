@@ -1,0 +1,170 @@
+{
+  "comment": {
+    "links": {
+      "self": {
+        "href": "https://api.bitbucket.org/2.0/repositories/BigETI/webhook-test/issues/1/comments/32612689"
+      },
+      "html": {
+        "href": "https://bitbucket.org/BigETI/webhook-test/issues/1#comment-32612689"
+      }
+    },
+    "content": {},
+    "created_on": "2016-12-02T08:36:43.327694+00:00",
+    "user": {
+      "username": "BigETI",
+      "type": "user",
+      "display_name": "Ethem Kurt",
+      "uuid": "{31e19bf2-cfa0-4f3c-b9c3-2af191b1dd7a}",
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/users/BigETI"
+        },
+        "html": {
+          "href": "https://bitbucket.org/BigETI/"
+        },
+        "avatar": {
+          "href": "https://bitbucket.org/account/BigETI/avatar/32/"
+        }
+      }
+    },
+    "updated_on": null,
+    "type": "issue_comment",
+    "id": 32612689
+  },
+  "changes": {
+    "status": {
+      "new": "resolved",
+      "old": "new"
+    }
+  },
+  "issue": {
+    "priority": "major",
+    "votes": 0,
+    "repository": {
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/repositories/BigETI/webhook-test"
+        },
+        "html": {
+          "href": "https://bitbucket.org/BigETI/webhook-test"
+        },
+        "avatar": {
+          "href": "https://bitbucket.org/BigETI/webhook-test/avatar/32/"
+        }
+      },
+      "type": "repository",
+      "uuid": "{9c77a9b0-08b8-41d5-8d4b-afd7300f0cd4}",
+      "full_name": "BigETI/webhook-test",
+      "name": "Webhook Test"
+    },
+    "links": {
+      "attachments": {
+        "href": "https://api.bitbucket.org/2.0/repositories/BigETI/webhook-test/issues/1/attachments"
+      },
+      "self": {
+        "href": "https://api.bitbucket.org/2.0/repositories/BigETI/webhook-test/issues/1"
+      },
+      "watch": {
+        "href": "https://api.bitbucket.org/2.0/repositories/BigETI/webhook-test/issues/1/watch"
+      },
+      "comments": {
+        "href": "https://api.bitbucket.org/2.0/repositories/BigETI/webhook-test/issues/1/comments"
+      },
+      "html": {
+        "href": "https://bitbucket.org/BigETI/webhook-test/issues/1/test-issue"
+      },
+      "vote": {
+        "href": "https://api.bitbucket.org/2.0/repositories/BigETI/webhook-test/issues/1/vote"
+      }
+    },
+    "title": "Test issue",
+    "reporter": {
+      "username": "BigETI",
+      "type": "user",
+      "display_name": "Ethem Kurt",
+      "uuid": "{31e19bf2-cfa0-4f3c-b9c3-2af191b1dd7a}",
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/users/BigETI"
+        },
+        "html": {
+          "href": "https://bitbucket.org/BigETI/"
+        },
+        "avatar": {
+          "href": "https://bitbucket.org/account/BigETI/avatar/32/"
+        }
+      }
+    },
+    "component": null,
+    "state": "resolved",
+    "watches": 1,
+    "content": {
+      "raw": "This is a test issue",
+      "markup": "markdown",
+      "html": "<p>This is a test issue</p>"
+    },
+    "assignee": null,
+    "created_on": "2016-12-02T08:26:15.631950+00:00",
+    "version": null,
+    "edited_on": null,
+    "milestone": null,
+    "updated_on": "2016-12-02T08:36:43.317454+00:00",
+    "type": "issue",
+    "id": 1,
+    "kind": "bug"
+  },
+  "repository": {
+    "scm": "git",
+    "website": "",
+    "uuid": "{9c77a9b0-08b8-41d5-8d4b-afd7300f0cd4}",
+    "links": {
+      "self": {
+        "href": "https://api.bitbucket.org/2.0/repositories/BigETI/webhook-test"
+      },
+      "html": {
+        "href": "https://bitbucket.org/BigETI/webhook-test"
+      },
+      "avatar": {
+        "href": "https://bitbucket.org/BigETI/webhook-test/avatar/32/"
+      }
+    },
+    "full_name": "BigETI/webhook-test",
+    "owner": {
+      "username": "BigETI",
+      "type": "user",
+      "display_name": "Ethem Kurt",
+      "uuid": "{31e19bf2-cfa0-4f3c-b9c3-2af191b1dd7a}",
+      "links": {
+        "self": {
+          "href": "https://api.bitbucket.org/2.0/users/BigETI"
+        },
+        "html": {
+          "href": "https://bitbucket.org/BigETI/"
+        },
+        "avatar": {
+          "href": "https://bitbucket.org/account/BigETI/avatar/32/"
+        }
+      }
+    },
+    "type": "repository",
+    "is_private": true,
+    "name": "Webhook Test"
+  },
+  "actor": {
+    "username": "BigETI",
+    "type": "user",
+    "display_name": "Ethem Kurt",
+    "uuid": "{31e19bf2-cfa0-4f3c-b9c3-2af191b1dd7a}",
+    "links": {
+      "self": {
+        "href": "https://api.bitbucket.org/2.0/users/BigETI"
+      },
+      "html": {
+        "href": "https://bitbucket.org/BigETI/"
+      },
+      "avatar": {
+        "href": "https://bitbucket.org/account/BigETI/avatar/32/"
+      }
+    }
+  }
+}

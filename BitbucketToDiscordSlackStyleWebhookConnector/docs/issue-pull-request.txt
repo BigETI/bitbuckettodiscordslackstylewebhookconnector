@@ -1,0 +1,9 @@
+Webhook pull request events ambiguous
+
+I am working on an interface to convert webhook messages to different services. I found these problems during the development for pull request webhook events:
+
+- Create and update events are ambiguous
+- Update invokes 2 webhook requests, which are by JSON same objects (except for some date and time attributes)
+- Approve, approval remove, merge and decline are ambiguous
+- Comment create and delete are ambiguous
+- Comment update does not invoke any webhook requests
