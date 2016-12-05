@@ -4,23 +4,23 @@ class ObjectBuilder {
 	function __construct() {
 		//
 	}
-	public static function &getReferenceFromPath($obj, $object_path, $create_if_not_exists = false) {
-		$ret &= $obj;
+	public static function setAttributeWithPath($arr, $object_path, $value) {
+		$ret = array ($arr);
+		$t = $ret;
+		$i = '';
+		$first = true;
 		$paths = explode ( '/', $object_path );
 		foreach ( $paths as $p ) {
-			if (is_array ( $ret )) {
-				if (isset ( $ret [$p] ))
-					$ret &= $ret [$p];
-				else {
-					if ($create_if_not_exists)
-						$ret [$p] = array ();
-					else {
-						$ret = null;
-						break;
-					}
-				}
+			if ($first)
+				$first = false;
+			else {
+				if (!(isset ( $t [$i] )))
+					$t [$i] = array ();
+				$t = $t [$i];
 			}
+			$i = $p;
 		}
+		$t [$i] = $value;
 		return $ret;
 	}
 	public function addAttribute($attribute_path, $routine_name) {
@@ -29,7 +29,8 @@ class ObjectBuilder {
 	public function build($obj) {
 		$ret = array ();
 		foreach ( $this->attributes as $k => $v )
-			ObjectBuilder::getReferenceFromPath ( $ret, $k, true ) = $v ( $k, $obj );
+			$ret[$k] = $v ( $k, $obj );
+		//$ret = ObjectBuilder::setAttributeWithPath ( $ret, $k, $v ( $k, $obj ) );
 		return $ret;
 	}
 }
