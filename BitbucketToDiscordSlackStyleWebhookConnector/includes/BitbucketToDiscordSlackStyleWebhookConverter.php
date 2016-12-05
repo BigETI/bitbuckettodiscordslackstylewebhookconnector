@@ -130,7 +130,7 @@ class BitbucketToDiscordSlackStyleWebhookConverter extends WebhookConverter {
 			// Fork
 			$fork = $obj->fork;
 			$tag = 'FORK';
-			$title = 'Fork created';
+			$title = 'Fork create from repository "' . $repository_name . "\"\n" . $repository_url;
 			$fork_name = 'Unknown name';
 			$fork_language = 'Unknown language';
 			$fork_description = 'Unknown description';
@@ -160,7 +160,7 @@ class BitbucketToDiscordSlackStyleWebhookConverter extends WebhookConverter {
 				// Push create
 				$changes = $push->changes;
 				$tag = 'PUSH';
-				$title = 'Push created';
+				$title = 'Push created on repository "' . $repository_name . "\"\n" . $repository_url;
 				$message = '';
 				$first = true;
 				foreach ( $changes as $change ) {
