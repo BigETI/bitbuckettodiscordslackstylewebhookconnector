@@ -1,11 +1,14 @@
 <?php
 class ObjectBuilder {
 	private $attributes = array ();
-	function __construct() {
-		//
+	private $ref = null;
+	function __construct($ref) {
+		$this->ref = $ref;
 	}
 	public static function setAttributeWithPath($arr, $object_path, $value) {
-		$ret = array ($arr);
+		$ret = array (
+				$arr 
+		);
 		$t = $ret;
 		$i = '';
 		$first = true;
@@ -14,7 +17,7 @@ class ObjectBuilder {
 			if ($first)
 				$first = false;
 			else {
-				if (!(isset ( $t [$i] )))
+				if (! (isset ( $t [$i] )))
 					$t [$i] = array ();
 				$t = $t [$i];
 			}
@@ -29,9 +32,12 @@ class ObjectBuilder {
 	public function build($obj) {
 		$ret = array ();
 		foreach ( $this->attributes as $k => $v )
-			$ret[$k] = $v ( $k, $obj );
-		//$ret = ObjectBuilder::setAttributeWithPath ( $ret, $k, $v ( $k, $obj ) );
+			$ret [$k] = $v ( $k, $obj, $this->ref );
+			// $ret = ObjectBuilder::setAttributeWithPath ( $ret, $k, $v ( $k, $obj ) );
 		return $ret;
+	}
+	public function getReference() {
+		return $this->ref;
 	}
 }
 
